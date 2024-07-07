@@ -115,6 +115,7 @@ dmypy.json
 .src
 media/
 static/
+uploads/
 
 *.jpg
 *.png
