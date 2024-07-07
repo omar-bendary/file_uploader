@@ -46,12 +46,10 @@ class FileViewSet(viewsets.ModelViewSet):
 
         accept = request.META.get("HTTP_ACCEPT", "text/plain")
 
-        if accept == "application/json":
+        if accept == "application/*":
             return Response(response_data, status=status.HTTP_200_OK)
-        elif accept == "application/xml":
-            return Response(response_data, content_type="application/xml")
         else:
-            return HttpResponse(line, content_type="text/plain")
+            return HttpResponse(line, status=status.HTTP_200_OK)
 
     @action(detail=True, methods=["get"])
     def random_line_backwards(self, request, pk=None):
