@@ -1,7 +1,7 @@
 import random
 
 from django.http import HttpResponse
-from rest_framework import status, viewsets
+from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.parsers import FileUploadParser
 from rest_framework.response import Response
@@ -10,7 +10,11 @@ from .models import UploadedFile
 from .serializers import UploadedFileSerializer
 
 
-class FileViewSet(viewsets.ModelViewSet):
+class FileViewSet(
+    mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    viewsets.GenericViewSet,
+):
     queryset = UploadedFile.objects.all()
     serializer_class = UploadedFileSerializer
 
