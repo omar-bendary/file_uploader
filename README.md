@@ -233,6 +233,10 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 
 # API Documentation
 
+You can acess Swagger UI or ReDoc interface
+
+* `/swagger/`: Provides a Swagger UI interface for interacting with your API.
+* `/redoc/`: Provides a ReDoc interface for your API documentatio
 
 #### Endpoints
 
@@ -253,7 +257,6 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 
 ```
 
-
 2. **Get a Random Line** :
 
 * **URL** : `/api/files/{file_id}/random_line/`
@@ -270,7 +273,6 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 
   ```
 
-
 3. **Get a Random Line Backwards** :
 
 * **URL** : `/api/files/{file_id}/random_line_backwards/`
@@ -279,7 +281,6 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
   ```plaintext
   .elif eht morf enil modnar a si sihT
   ```
-
 
 4. **Get the 100 Longest Lines Across All Files** :
 
@@ -295,7 +296,6 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
   ]
 
   ```
-
 
 5. **Get the 20 Longest Lines of One File** :
 
