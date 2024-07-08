@@ -236,7 +236,7 @@ The application is run on [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
 You can acess Swagger UI or ReDoc interface
 
 * `/swagger/`: Provides a Swagger UI interface for interacting with your API.
-* `/redoc/`: Provides a ReDoc interface for your API documentatio
+* `/redoc/`: Provides a ReDoc interface for your API documentation
 
 #### Endpoints
 
